@@ -161,11 +161,14 @@ O mesmo vale para o CSS, os arquivos devem ser escritos em less com extenção .
 Para instalar o sistema siga o passo a passo abaixo,
 
 1. Criar um  banco de dados e importar o arquivo **grgit.sql**
-2. Acessar a pasta raíz do sistema e executar os comandos abaixo:
-  1. npm install
-  2. php -S localhost:8080
-3. Abrir o navegador e acessar o link **localhost:8080/home**
+2. Alterar as informações de acesso ao banco no arquivo **/vendor/grgit/Lib/Db.php**
+3. Acessar a pasta raíz do sistema e executar o comando abaixo:
+4. php -S localhost:8080
+5. Abrir o navegador e acessar o link **localhost:8080/home**
 
+**Referências**
+Status code das Respostas:
+https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
 **Observações:**
 
