@@ -16,12 +16,12 @@
 \* Foi solicitado que seja usado php puro, sem frameworks, o composer está sendo utilizado  para reaproveitar o autoloader e pensando na reusabilidade do código.
 
 
-**2. Dependências dev
+*2. Dependências dev*
 
 sudo npm install -g gulp
 
 
-**3. Estrutura
+*3. Estrutura*
 
 A estrutura básica consiste na seguinte árvore abaixo:
 
@@ -62,7 +62,7 @@ vendor/
                 Lib/
 
 
-**4. Rotas
+*4. Rotas*
 
 As rotas estão no arquivo index.php que está localizado na raíz do sistema.
 
@@ -75,7 +75,7 @@ $app->post('/dashboard', 'AdminController@indexAdminController@index', 'middlewa
 Apenas os 2 primeiros parâmetros são obrigatórios, o primeiro parâmetro define a rota e o segundo o Objeto@metodo
 
 
-**5. Controllers
+*5. Controllers*
 
 Os controllers devem ser criados dentro da pasta App/Controllers e deve seguir a seguinte semântica
 
@@ -95,7 +95,7 @@ class ExemploController extends Controller
 É possível definir templates para diferentes tipos de controllers, para isso basta alterar o valor do atributo **$this->template = 'default'** ; para o nome do template criado.
 
 
-**6. Models
+*6. Models*
 
 Os Models devem ser criados dentro da pasta APP/Models e deve seguir a seguinte semântica
 
@@ -111,7 +111,7 @@ class Contact extends Model
 O atributo **$table** deve ter o mesmo valor da tabela referente ao objeto.
 
 
-**7. Middlewares
+*7. Middlewares*
 
 Os Middlewares devem ser criados dentro da pasta APP/Middlewares e deve seguir a seguinte semântica
 
@@ -136,7 +136,7 @@ No exemplo acima, quando a rota /dashboard receber uma requisição GET, Antes d
 Os métodos também podem ser chamados fora de uma rota.
 
 
-**8. Views
+*8. Views*
 
 As views serão carregadas através do controller pelo método $this→view() que pode receber até 3 parâmetros
 
@@ -147,7 +147,7 @@ O terceiro parâmetro diz se a view deve ser carregada  com um template ou não.
 Para recuperar os valores passados no segundo parâmetro, basta utilizar a variável **$data** dentro da view
 
 
-**8.1 JS e LESS
+*8.1 JS e LESS*
 
 O JS de desenvolvimento deve ser escrito nesta pasta e deve obedecer o mesmo nome e hierarquia de pastas da view, exemplo, se foi criado uma view com nome dashboard dentro da pasta admin, então dentro da pasta JS deve ser criado uma pasta admin com o arquivo dashboard.js
 
@@ -156,7 +156,7 @@ o Gulp irá ler as alterações e criações na pasta JS e nas subpastas e criar
 O mesmo vale para o CSS, os arquivos devem ser escritos em less com extenção .less e serão compilados e minificados para as respectivas pastas dentro da pasta public.
 
 
-**9. Instalação
+*9. Instalação*
 
 Para instalar o sistema siga o passo a passo abaixo,
 
@@ -167,7 +167,7 @@ Para instalar o sistema siga o passo a passo abaixo,
 3. Abrir o navegador e acessar o link **localhost:8080/home**
 
 
-**Observações:**
+*Observações:*
 
 - O index da aplicação é o /home
 - Não utilizei webpack, mas tenho conhecimento para utilizar
