@@ -172,6 +172,9 @@ https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status
 
 **Observações:**
 
+- admin
+    - Usuário: bsalves2108@gmail.com
+    - Senha: 123
 - O index da aplicação é o /home
 - Não utilizei webpack, mas tenho conhecimento para utilizar
 - Se apresentar algum erro no autoloader basta executar composer update ou install
