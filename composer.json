@@ -1,0 +1,16 @@
+{
+    "name": "grgit/desafio",
+    "require": {
+        "php": ">=7.0"
+    },
+    "ahuthors": [{
+        "name": "Bruno dos Santos Alves",
+        "email": "bsalves2108@gmail.com"
+    }],
+    "autoload": {
+        "psr-4": {
+            "grgit\\": "vendor/grgit/",
+            "App\\": "App/"
+        }
+    }
+}
