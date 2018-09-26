@@ -22,7 +22,7 @@
 
     <?=$this->content($data)?>
 
-    <div class="modal fade" id="Loading" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="Loading" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body" align="center">
@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="ModalError" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body" align="center">
@@ -77,6 +77,12 @@
                         $("#Loading").modal('hide');
                         $('#error_status_code').html('404');
                         $('#error_message').html('Contact not found');
+                        $('#ModalError').modal('show');
+                    },
+                    403: function() {
+                        $("#Loading").modal('hide');
+                        $('#error_status_code').html('403');
+                        $('#error_message').html('I need more details');
                         $('#ModalError').modal('show');
                     },
                     401: function() {
