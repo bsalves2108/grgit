@@ -1,4 +1,4 @@
-*1. Linguagens/bibliotecasJS utilizadas:*
+**1. Linguagens/bibliotecasJS utilizadas:**
 
 - php 7.1+
 - gulp
