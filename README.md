@@ -68,9 +68,9 @@ As rotas estão no arquivo index.php que está localizado na raíz do sistema.
 
 Temos 2 métodos get() e post() e devem ser utilizados da seguinte maneira:
 
-$app->get('/dashboard', 'AdminController@indexAdminController@index', 'middleware');
+$app->get('/dashboard', 'AdminController@index', 'middleware');
 
-$app->post('/dashboard', 'AdminController@indexAdminController@index', 'middleware');
+$app->post('/dashboard', 'AdminController@index', 'middleware');
 
 Apenas os 2 primeiros parâmetros são obrigatórios, o primeiro parâmetro define a rota e o segundo o Objeto@metodo
 
@@ -129,7 +129,7 @@ class Auth extends Middleware
 
 É obrigatório a declaração do método run() pois o sistema de rotas utiliza este método para executar o middleware de forma automática, todas as verificações devem ser criadas e chamadas no método run(), caso queira que ela seja executada na chamada de uma rota, segue exemplo de uso em uma rota abaixo:
 
-$app->get('/dashboard', 'AdminController@indexAdminController@index', 'Auth');
+$app->get('/dashboard', 'AdminController@index', 'Auth');
 
 No exemplo acima, quando a rota /dashboard receber uma requisição GET, Antes de executar o método index do objeto AdminController, o método run do middleware Auth será acionado.
 
